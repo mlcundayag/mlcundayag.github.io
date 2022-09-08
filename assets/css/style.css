@@ -1,0 +1,324 @@
+/*Sets variables*/
+:root {
+    --primary-color: #cbb2ef;
+    --secondary-color: #6439a3;
+    --highlight-color: #87367b;
+    --background-color: black; 
+    --theme-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  position: relative;
+  font-size: 20px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: var(--theme-font);
+}
+
+header,
+footer {
+  width: full-width;
+  line-height: 80px;
+}
+
+header {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 10px solid var(--secondary-color);
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 200%;
+  margin: 0px 3%;
+}
+
+nav {
+  color: var(--primary-color);
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: grab;
+}
+
+/*Pseudo class for hovering style*/
+a:hover {
+  color: var(--highlight-color);
+}
+
+.full-width {
+  max-width: 100%;
+}
+
+/*Header container for background*/
+.container {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  overflow-x: hidden;
+  top: 0;
+}
+
+/*Header container for background left*/
+.split-left {
+  width: 60%;
+  left: 0;
+  }
+ 
+/*Header container for background right with image*/  
+.split-right {
+  width: 40%;
+  right: 0;
+  }
+
+.split-right img {
+  margin: 0;
+}  
+
+/*Header title font container*/
+.container-word-art {
+margin: 10% 30% 0px 0px;
+display: flex;
+flex-direction: row nowrap;
+align-content: center;
+gap: 10%;
+}
+
+
+.word-art {
+  font-size: 400%;
+  margin: 2% 5%;
+  color: var(--secondary-color);
+  flex: 2;
+}
+
+.container-word-art img {
+  width: 250px;
+  flex: 1
+}
+
+#subtitle {
+  font-size: 60%;
+}
+
+h2 {
+  font-size: 150%;
+  margin: 20px;
+}
+
+main {
+  padding: 60px 0;
+}
+
+/*about me settings*/  
+.about {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 5%;
+}
+
+/*about me section styling for text box*/
+.about-section {
+  padding: 10px 4% 3%;
+  width: 50%;
+  min-width: 300px;
+  margin: 20px 5%;
+  flex-grow: 4;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  border: 5px solid var(--secondary-color);
+  border-radius: 20px;
+}  
+
+.about-section p {
+  margin: 5px 0px;
+  text-align: justify;
+}
+
+/*Styling rotation for the image card*/
+.about img {
+  flex-grow: 6;
+  padding: 10% 0px;
+  width: 60%;
+  min-width: 300px;
+  transform: rotate(20deg);
+}
+
+/*Set up box container for images*/
+.box-container {
+  box-sizing: border-box;
+  margin: 5% 10%;
+}
+
+.container-row {
+  max-width: full-width;
+}
+
+.container-column {
+  float: left;
+  padding: 2%;
+}
+
+.container-column img {
+  border-radius: 20px;
+}
+
+/*Styling for the big image*/
+.big {
+  width: 100%;
+}
+
+/*Styling for small images*/
+.small {
+  width: 33.33%;
+}
+
+/*clear fix*/
+.container-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+
+footer {
+  position: absolute;
+  margin: 0px 2% 1%;
+  bottom: 0;
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 0;
+  padding: 7% 5%;
+  background-color:  var(--background-color);
+}
+
+form {
+  display: inline-block;
+  margin: 0px;
+  width: 500px;
+  text-align: center;
+  padding: 10px 0px;
+  border: 5px solid var(--secondary-color);
+  border-radius: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  padding: 2% 0px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 60%;
+  border: 2px solid var(--background-color);
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.center {
+    text-align: center;
+}
+
+/*Styling for small screens*/
+@media screen and (max-width: 576px) {
+  body, main, section, nav, div, .about {
+    display: block;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .split-left {
+    width: 100%;
+    top: 0;
+  }
+  
+  .split-right {
+    width: 100%;
+    bottom: 0;
+  }
+
+  .container-word-art {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 2% 5% 0px;
+  }
+
+  .word-art {
+    position: relative;
+    font-size: 180%;
+    line-height: 1.5;
+    transform: translate(17%, 0px);
+  } 
+
+  /*transform main image by resizing and moving it to desired location*/
+  .container-word-art img {
+    transform: scale(0.4) translate(-120%, -185%);
+  }
+
+  main {
+    margin-top: -20%;
+  }
+
+  .about-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .small {
+    width: 33.33%;
+  }
+
+  form {
+    display: inline-block;
+    text-align: center;
+    width: 350px;
+  }
+
+  label {
+    width: 65px;
+  }
+
+  footer {
+    display: block;
+    position: relative;
+    padding-top: 20px 0px;
+  }
+}

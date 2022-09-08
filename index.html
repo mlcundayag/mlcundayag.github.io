@@ -1,7 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css"  href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/hair and glasses.jpg">
+    <title>miguelundayag</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    
+    <header>
+        <div class="full-width"></div>
+            <div class="nav-header">
+                    <h1>Miguel</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#about-me">About Me</a></li>
+                            <li><a href="#recent-work">My Work</a></li>
+                            <li><a href="#contact-me">Say Hello</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <div class="container split-left"></div>
+               <div class="container-word-art">
+                    <p class="word-art">Miguel Undayag<br><span id="subtitle">Transforming Web Spaces</span></p>
+                    <figure>
+                        <img src="./assets/images/hair and glasses.jpg" alt="avatar depicting a male with purple hair and wearing sunglasses">
+                    </figure>
+                </div>
+            <div class="container split-right">
+                <img src="./assets/images/galaxy1-1.jpg" width="100%" alt="milkyway galaxy">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about" id="about-me">
+            <div class="about-section center">
+                <h2>Aloha lets get to know each other!</h2>
+                <p>Web developer here, just living life in the little town of Waikiki, in the great state of Aloha. Three years experience in e-commerce with a background in law. I'm a military veteran, now living the dream doing what I love. It's been a pleasure collaborating within the local community but now ready to expand worldwide and beyond.</p>
+            </div>
+            <div>
+                <img src="../dev-portfolio/assets/images/hawaii postcard.png" alt="a postcard with a text saying 'greetings from Hawaii'">
+            </div>
+        </section>
+
+        <section id="recent-work">
+            <div class="box-containter center">
+                <div class="container-row">
+                    <h2>Recent Work</h2>
+                    <div class="container-column big">
+                        <figure>
+                            <a href="https://islandbykoanani.com/" target="_blank">
+                            <img src="./assets/images/Island by Koa Nani.jpg" width="50%" alt="homepage screenshot of a website">
+                            <figcaption>Island by Koa Nani</figcaption></a>
+                        </figure>
+                    </div>   
+                    <div class="container-column small">
+                        <figure>
+                            <img src="./assets/images/The Hawaiian Jewel.jpg" width="50%" alt="homepage screenshot of a website">
+                            <figcaption>The Hawaiian Jewel</figcaption>
+                        </figure>
+                    </div>  
+                    <div class="container-column small">
+                        <figure>
+                            <img src="./assets/images/Slipper Paradise.jpg" width="50%" alt="homepage screenshot of a website">
+                            <figcaption>Paradise Slipper</figcaption>
+                        </figure>
+                    </div>   
+                    <div class="container-column small">
+                        <figure>
+                            <img src="./assets/images/Ruebon Fine Art.jpg" width="50%" alt="homepage screenshot of a website">
+                            <figcaption>Reuben Fine Art</figcaption>
+                        </figure>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="center" id="contact-me">
+            <h2>Contact Me</h2>
+            <p></p>
+                <form>
+                    <ul>
+                        <li>
+                            <label class="one-half" for="name">Name:</label>
+                            <input type="text" id="name" name="user-name" placeholder="Full Name">
+                        </li>
+                        <li>
+                            <label class="one-half" for="email">Email:</label>
+                            <input type="text" id="email" name="user-email" placeholder="your@email.com">
+                        </li>
+                        <li>
+                            <label class="full-half" for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" cols="33" placeholder="Your message"></textarea>
+                        </li>
+                    </ul>
+                        <div class="full-half">
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+        </section>
+
+    </main>
+
+    <footer>
+       <h3> © Miguel Undayag </h3>
+    </footer>
 </body>
 </html>
